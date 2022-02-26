@@ -211,7 +211,6 @@ def _parse_col_1(col, manga, description_format):
         if len(name) > 0 and name != "N/A"
     ]
 
-    import ipdb;ipdb.set_trace()
     if "N/A" not in contents[4].get_text():
         if contents[4].a is None:
             manga["groups"] = [{"name": contents[4].get_text().strip(), "id": None}]
